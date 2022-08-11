@@ -14,10 +14,9 @@ The func *void printsin(struct sockaddr_in *sin, char *pname, char* msg)
 will print the string indicated by pname, print the string indicated by msg,
 then the string "ip= " follow by the IP address of the host and finally the string "port= " followed by the port number.
 
-how i should run:
+How it should run:
 
-<img src0="images/send_recv.png" alt="send_recv" width="80" height="20">
-
+![send_recv](https://user-images.githubusercontent.com/106338500/184242075-c7acb078-7801-4ba4-a1f8-6d98b380b871.png)
 
 
 # Problem 2: Create a gateway process that simulates datagram loss
@@ -30,10 +29,9 @@ gateway.c : Takes the name of a host on the command line and creates a datagram 
 sink.c : Is almost identical to recv_udp.c, that means, it creates a socket to receive datagrams from any host on port P+1, then enters an infinite loop where it receives a datagram and prints to the screen the information of where the datagram came from (you can print the IP address in dotted-decimal notation) and what message it contains.
 
 
-how i should run:
+How it should run:
 
-<img src1="images/sink_gat_src.png" alt="sink_gat_src" width="80" height="20">
-
+![sink_gat_src](https://user-images.githubusercontent.com/106338500/184242198-004c896e-8519-43c7-8c0c-3e7fcf3f46ea.png)
 
 
 ## TCP programming
@@ -42,9 +40,9 @@ how i should run:
 
 Review the programs net_server.c and net_client.c to be sure you understand them.
 
-how i should run:
+How it should run:
 
-<img src2="images/client_server.png" alt="client_server" width="80" height="20">
+![client_server](https://user-images.githubusercontent.com/106338500/184242282-244c5e2f-4648-47cb-b6a8-3c4277124b2a.png)
 
 
 # Part B: A simple web client
@@ -76,4 +74,8 @@ d. Deleteing index.html by system("rm 'FILE name'") commend.
 Run it yourself - you can use on any website 
 -recommendation- www.google.com
 
-<img src3="images/web.png" alt="web" width="80" height="60">
+How it should run:
+
+![web](https://user-images.githubusercontent.com/106338500/184242556-783c1056-a17b-4e8e-9c38-94ad4db9add9.png)
+
+
