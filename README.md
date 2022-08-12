@@ -45,6 +45,24 @@ How it should run:
 ![client_server](https://user-images.githubusercontent.com/106338500/184242282-244c5e2f-4648-47cb-b6a8-3c4277124b2a.png)
 
 
+
+## Q&A 
+
+Q.
+  Suppose you run net_client when net_server is not running?
+
+A.
+  If we run client whan server is not runing,
+  The client will try to connect with the func connect() above but will not succeed,
+  becouse the server accept socket is not open and no server is listening to accept a client from this port.
+  So we will get a Error establishing communications: Connection refused.
+  
+  
+![client-not-server](https://user-images.githubusercontent.com/106338500/184327215-96061f9e-50eb-44d5-ad33-471407a5e3de.png)
+
+
+
+
 # Part B: A simple web client
 
 The wget program allows you to fetch the contents of a URL and save it to a new file.
@@ -77,5 +95,46 @@ Run it yourself - you can use on any website
 How it should run:
 
 ![web](https://user-images.githubusercontent.com/106338500/184242556-783c1056-a17b-4e8e-9c38-94ad4db9add9.png)
+
+
+
+## Q&A
+
+Q1. 
+  Examine the result of running your program for the URL http://www.yahoo.com  The HTTP header is separated from the contents of the file by a blank line. 
+  What information do you see in the header?
+
+A1.
+  The program will run it successfully .
+  URL transformed to HTTPS due to an HSTS policy
+  https://www.yahoo.com/
+  Resolving www.yahoo.com
+  Connecting to www.yahoo.com
+  HTTP request sent
+  Length: unspecified [text/html]
+  Saving to: ‘index.html’
+
+  index.html .52K   876KB/s    in 0.7s    
+
+  (876 KB/s) - ‘index.html’ saved [645656].
+
+  And the program will print all the data from the file.
+  
+  
+![yahoo](https://user-images.githubusercontent.com/106338500/184326707-5ad88bf2-cc31-4ac6-8cc9-f6e9ca3782c9.png)
+
+
+
+Q2.
+  Examine the result of running your program for the URL http://www.yahoo.com/does-not-exist. How is the HTTP header different from what you saw 
+  for the URL http://www.yahoo.com?
+
+A2.
+  In this case  the program wiil send a HTTP request and get response - ERROR 404: Not Found.
+  Will not print any file becouse file does-not-exist . 
+  (will print.. - File is NULL) anf d exit the program.
+
+
+![yahoo-does-not-exist](https://user-images.githubusercontent.com/106338500/184326722-e5e92a18-a673-42d4-87b6-e9caa62428e5.png)
 
 
