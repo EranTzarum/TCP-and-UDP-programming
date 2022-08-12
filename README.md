@@ -58,6 +58,19 @@ How it should run:
 ![client_server](https://user-images.githubusercontent.com/106338500/184242282-244c5e2f-4648-47cb-b6a8-3c4277124b2a.png)
 
 
+nslookup.c:
+
+Displays information that you can use to diagnose Domain Name System (DNS) infrastructure. Before using this tool, you should be familiar with how DNS works. The nslookup command-line tool is available only if you have installed the TCP/IP protocol.
+
+Type the command nslookup <hostname>, where hostname is the name of the computer you are working on, to learn the IP address of that computer (you can use another way to check it as well).
+
+How it should run:
+
+
+
+![nslookup](https://user-images.githubusercontent.com/106338500/184338931-6701ad16-dea2-4f3a-b0c3-551917dad5c1.png)
+
+
 
 
 ## Q&A 
@@ -73,6 +86,20 @@ A.
   
   
 ![client-not-server](https://user-images.githubusercontent.com/106338500/184327215-96061f9e-50eb-44d5-ad33-471407a5e3de.png)
+
+Here you can see thet whan we run net_server.c and then net_client.c, all we got a full connection :
+
+
+
+![Screenshot from 2022-08-12 13-23-27](https://user-images.githubusercontent.com/106338500/184337921-fa2d7c61-2bbf-41a1-82bb-b903a9400bd7.png)
+
+
+
+BUT when we run only net_client.c net_server is not running as we assumed the connection will not succeed:
+
+
+
+![Screenshot from 2022-08-12 13-24-48](https://user-images.githubusercontent.com/106338500/184338266-8e8bdaa9-f339-436d-8bce-ec184dc6c2f6.png)
 
 
 
