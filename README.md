@@ -1,8 +1,14 @@
 # Final Network project
 
-In this project we solved like problems in TCP programming and UDP programming.
+In this project we solved problems in TCP programming and UDP programming.
+
+
+
+
 
 # UDP programming
+
+
 
 ## Problem 1: Learn to use datagram sockets by example
 
@@ -36,7 +42,12 @@ How it should run:
 ![sink_gat_src](https://user-images.githubusercontent.com/106338500/184242198-004c896e-8519-43c7-8c0c-3e7fcf3f46ea.png)
 
 
+
+
+
 # TCP programming
+
+
 
 ## Part A: IP addresses, hostnames and .... HTTP 
 
@@ -62,6 +73,7 @@ A.
   
   
 ![client-not-server](https://user-images.githubusercontent.com/106338500/184327215-96061f9e-50eb-44d5-ad33-471407a5e3de.png)
+
 
 
 
