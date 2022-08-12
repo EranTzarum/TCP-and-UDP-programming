@@ -22,6 +22,8 @@ then the string "ip= " follow by the IP address of the host and finally the stri
 
 How it should run:
 
+
+
 ![send_recv](https://user-images.githubusercontent.com/106338500/184242075-c7acb078-7801-4ba4-a1f8-6d98b380b871.png)
 
 
@@ -38,6 +40,8 @@ sink.c : Is almost identical to recv_udp.c, that means, it creates a socket to r
 
 
 How it should run:
+
+
 
 ![sink_gat_src](https://user-images.githubusercontent.com/106338500/184242198-004c896e-8519-43c7-8c0c-3e7fcf3f46ea.png)
 
@@ -84,23 +88,30 @@ A.
   becouse the server accept socket is not open and no server is listening to accept a client from this port.
   So we will get a Error establishing communications: Connection refused.
   
-  
-![client-not-server](https://user-images.githubusercontent.com/106338500/184327215-96061f9e-50eb-44d5-ad33-471407a5e3de.png)
 
 Here you can see thet whan we run net_server.c and then net_client.c, all we got a full connection :
 
 
 
-![Screenshot from 2022-08-12 13-23-27](https://user-images.githubusercontent.com/106338500/184337921-fa2d7c61-2bbf-41a1-82bb-b903a9400bd7.png)
+![server_client_wireshark](https://user-images.githubusercontent.com/106338500/184340621-659c8902-ed82-4a4c-a78c-0f7daa0dc78a.png)
 
 
 
-BUT when we run only net_client.c net_server is not running as we assumed the connection will not succeed:
+BUT when we run only net_client.c net_server is not running:
+
+How it should run:
 
 
 
-![Screenshot from 2022-08-12 13-24-48](https://user-images.githubusercontent.com/106338500/184338266-8e8bdaa9-f339-436d-8bce-ec184dc6c2f6.png)
+![client-not-server](https://user-images.githubusercontent.com/106338500/184340519-e560153a-102e-470e-b088-7a7197ec5014.png)
 
+
+
+As we assumed the connection will not succeed:
+
+
+
+![!server_client_wireshark](https://user-images.githubusercontent.com/106338500/184340888-b9c82d87-e766-409f-b55f-a2f180ce85f7.png)
 
 
 
@@ -135,6 +146,8 @@ Run it yourself - you can use on any website
 -recommendation- www.google.com
 
 How it should run:
+
+
 
 ![web](https://user-images.githubusercontent.com/106338500/184242556-783c1056-a17b-4e8e-9c38-94ad4db9add9.png)
 
