@@ -26,7 +26,7 @@ How it should run:
 
 ![send_recv](https://user-images.githubusercontent.com/106338500/184242075-c7acb078-7801-4ba4-a1f8-6d98b380b871.png)
 
-
+*To stop this program infinite loop prass Ctrl + C or kiil terminal.
 
 
 ## Problem 2: Create a gateway process that simulates datagram loss
@@ -46,7 +46,7 @@ How it should run:
 ![sink_gat_src](https://user-images.githubusercontent.com/106338500/184242198-004c896e-8519-43c7-8c0c-3e7fcf3f46ea.png)
 
 
-
+*To stop this program infinite loop prass Ctrl + C or kiil terminal.
 
 
 # TCP programming
